@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+  
+</head>
+
+<body>
+<div class="background"></div>
+<div class="container">
+  <div class="top-container">
+    <div class="top-left">
+      <h1 class="top-title">It’s a hot place for your streaming fantasy.</h1>
+      <p class="top-left-paragraph">It’s a free space for watching streams and chatting with alluring people.</p>
+    </div>
+    <div class="last-box-right-hiden">
+    <div class="image-wrapper">
+      <img src="images/logo/hand.svg" alt="Фон" class="background-img">
+      <img src="images/logo/sms.svg" alt="SMS" class="sms-img">
+      <button type="submit" class="auth-button-hiden">Sign up now</button>
+    </div>
+  </div>
+      <section id="section2" class="hiden-para-bot">
+      <div class="last-box-left">
+          <h2 class="last-box-title">It’s a dedicated space for your bold fantasies!</h2>
+          <p class="last-box-paragraph">
+          Hundreds of attractive admirers are already waiting for you here. Don’t delay – dive into the world of streaming, flirting, and hot communication right now!
+          </p>
+        </div>
+      </section>
+    <div class="top-right">
+      <button class="login-button">Log in</button>
+      <form id="login-form" class="sing-in-form active-form">
+        <div class="signup-form">
+          <div class="auth-buttons">
+            <button class="auth-button">
+              <img src="images/logo/google.png" />
+              <span class="auth-text">Sign up with Google</span>
+            </button>
+          </div>
+          <p class="or-low">or</p>
+          <p class="form-low">Email</p>
+          <input type="email" placeholder="e.g Alex@mail.com" required />
+          <p class="form-low">Password</p>
+          <input type="password" placeholder="8+ characters" required />
+          <div class="auth-buttons">
+            <button type="submit" class="auth-button">
+              <img src="images/logo/mail.jpg" alt="Email icon" />
+              <div class="auth-text">Sign in</div>
+            </button>
+          </div>
+          <p class="sign-low">You hereby confirm that you are fully able and competent to access Livebeam and comply with the Terms of Use & Service, and are at least eighteen (18) years of age or the age of majority under the law of the jurisdiction of your residence and the one you are accessing Livebeam from.</p>
+        </div>
+      </form>
+
+        <form id="register-form" class="register-form">
+          <div class="reg-form-container">
+          <div class="gender-selection">
+            <p class="form-low">I am</p>
+            <div class="radio-cower">
+            <input id="male" type="radio" name="gender" class="radio-input"/>
+            <label for="male" id="male" class="radio-btn">Male</label>
+            <input id="female" type="radio" name="gender" class="radio-input"/>
+            <label for="female" id="female" class="radio-btn">Female</label>
+            </div>
+          </div>
+          <p class="form-low">Name</p>
+          <input type="text" placeholder="e.g Alex Voz" required />
+          <p class="form-low">I was born</p>
+          <input type="text" placeholder="DD/MM/YYYY" required />
+          <div class="agreement">
+            <input id="agree" type="checkbox" />
+            <label for="agree" class="agree" required>I have read understand and agree to Terms of Use, Privacy Policy, Disclosures&Disclaimers.</label>
+          </div>
+            <div class="auth-buttons">
+              <button type="submit" class="auth-button-register">Sign up now</button>
+            </div>
+          </div>
+        </form>
+      <div class="form-toggle">
+        <button id="login-btn" onclick="showForm('register')" class="btn-toggle active"></button>
+        <button id="register-btn" onclick="showForm('login')" class="btn-toggle"></button>
+      </div>
+    </div> 
+  </div> 
+</div>
+
+  
+</div>
+  </div>
+</div>
+
+
+
+<section class="gif-carousel-wrapper">
+  <div class="gif-carousel-container">
+    <div class="gifs-carousel">
+    <div><img src='images/gifs/1.gif' class='gif-carousel-item' ></div>
+    <div><img src='images/gifs/2.gif' class='gif-carousel-item' ></div>
+    <div><img src='images/gifs/3.gif' class='gif-carousel-item' ></div>
+    <div><img src='images/gifs/4.gif' class='gif-carousel-item' ></div>
+    <div><img src='images/gifs/5.gif' class='gif-carousel-item' ></div>
+    <div><img src='images/gifs/6.gif' class='gif-carousel-item' ></div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <section class="about-section">
+    <div class="about-block">
+      <h2 class="about-title">About</h2>
+      <p class="about-paragraph">It’s a global streaming platform for communication and meeting incredibly beautiful people. We created an excellent place where you can enjoy your time and find appropriate matches at first.</p>
+      <p class="about-paragraph">Approximately 80% of our users have already found their lovelies. Watch streams w  ithout hindrance and meet someone who interests you.</p>
+      <button class="scroll-to" data-target="#section2">Join for free</button>
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <section class="why-join">
+    <h2 class="solo">Why join us?</h2>
+    <div class="why-join-container">
+
+      <div class="why-join-section">
+        <div class="why-head">
+          <img src="images/logo/1.svg" alt="Logo 2" class="logo" />
+          <h3 class="section-name">Chat with attractive streamers for free
+          </h3>
+        </div>
+          <div class="section-content">
+          <p class="section-paragraph">It’s an excellent web platform for streaming. Write messages to the beautiful streamers for free and explore this magical universe of communication!</p>
+        </div> 
+      </div>
+
+      <div class="why-join-section">
+        <div class="why-head">
+          <img src="images/logo/2.svg" alt="Logo 2" class="logo" />
+          <h3 class="section-name">Only verified users</h3>
+        </div>
+          <div class="section-content">
+          <p class="section-paragraph">We care about the privacy and security of our customers. All accounts are verified so look for an attractive stranger confidently!</p>
+        </div> 
+      </div>
+
+        <div class="why-join-section empty-bottom-left"></div>
+
+        <div class="why-join-section empty-top-right"></div>
+
+        <div class="why-join-section">
+          <div class="why-head">
+            <img src="images/logo/5.svg" alt="Logo 2" class="logo" />
+            <h3 class="section-name">Customized search</h3>
+          </div>
+            <div class="section-content">
+            <p class="section-paragraph">Match alluring partners for your own preferences. Maybe you will be interested in a hot slender European or shy beautiful Asian? Make your choice… </p>
+          </div> 
+        </div>
+  
+        <div class="why-join-section">
+          <div class="why-head">
+            <img src="images/logo/6.svg" alt="Logo 2" class="logo" />
+            <h3 class="section-name">Easy to use</h3>
+          </div>
+            <div class="section-content">
+            <p class="section-paragraph">Forget about hundreds of annoying notifications and inconvenient use. 
+              We have created the platform as easy to use and search as possible. Don’t waste your time studying functionality. 
+              Just enjoy!
+              </p>
+          </div> 
+        </div>
+  
+        </div> 
+      </div> <!-- why joint container end-->
+
+
+  </section>
+</div>
+
+<div class="png-solo-item-container">
+  <img src='images/pngs/solo2.png' class='png-solo-item' />
+</div>
+
+    
+
+<div class="container">
+<section class="find-section">
+<h2 class="solo">Here u can find</h2>
+<div class="finds-container">
+  <div class="find-box">
+    <img src="images/logo/f1.svg" alt="Іконка" class="find-icon">
+    <p class="find-text">Watching streams of everyone you really like;</p>
+  </div>
+  <div class="find-box">
+    <img src="images/logo/f2.svg" alt="Іконка" class="find-icon">
+    <p class="find-text">Free communication with pretty streamers;</p>
+  </div>
+  <div class="find-box">
+    <img src="images/logo/f3.svg" alt="Іконка" class="find-icon">
+    <p class="find-text">Sweet connection with people you match;</p>
+  </div>
+  <div class="find-box">
+    <img src="images/logo/f4.svg" alt="Іконка" class="find-icon">
+    <p class="find-text">New acquaintances with someone who has similar interests;
+    </p>
+  </div>
+  <div class="find-box">
+    <img src="images/logo/f5.svg" alt="Іконка" class="find-icon">
+    <p class="find-text">Fascinating hobbies and exciting occupations from people you fancy.</p>
+  </div>
+</div>
+</section>
+</div>
+
+
+<div class="container">
+<h2 class="solo">It’s a universe of communication and streaming without borders!</h2>
+<p class="bot-section-paragraph">
+Let yourself to be free – share your thoughts, delight, and fears with beautiful strangers!
+</p>
+</div>
+
+<section class="png-carousel-wrapper">
+  <div class="png-carousel-container">
+    <div class="pngs-carousel">
+    <div><img src='images/pngs/1.png' class='png-carousel-item' /></div>
+    <div><img src='images/pngs/2.png' class='png-carousel-item' /></div>
+    <div><img src='images/pngs/3.png' class='png-carousel-item' /></div>
+    <div><img src='images/pngs/4.png' class='png-carousel-item' /></div>
+    <div><img src='images/pngs/5.png' class='png-carousel-item' /></div>
+    <div><img src='images/pngs/6.png' class='png-carousel-item' /></div>
+    <div><img src='images/pngs/7.png' class='png-carousel-item' /></div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="solo"><button class="scroll-to" data-target="#section2">Join us for free</button></div>
+
+<div class="container">
+<div class="last-box">
+  <div class="last-box-left">
+    <h2 class="last-box-title">It’s a dedicated space for your bold fantasies!</h2>
+    <p class="last-box-paragraph">
+    Hundreds of attractive admirers are already waiting for you here. Don’t delay – dive into the world of streaming, flirting, and hot communication right now!
+    </p>
+    <button class="scroll-to" data-target="#section2">Write to her</button>
+  </div>
+  <div class="last-box-right">
+    <div class="image-wrapper">
+      <img src="images/logo/hand.svg" alt="Фон" class="background-img">
+      <img src="images/logo/sms.svg" alt="SMS" class="sms-img">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="top-left-mobile">
+  <h1 class="top-title">It’s a hot place for your streaming fantasy.</h1>
+  <p class="top-left-paragraph">
+    It’s a free space for watching streams and chatting with alluring people.
+  </p>
+</div>
+
+<footer>
+  <div class="foot-container">
+    <div class="foot foot1">
+      <a href="#" class="foot-text">support@mail.com</a>
+      <a href="#" class="foot-text">Unsubscribe</a>
+    </div>
+    <div class="foot foot2">
+      <p class="foot-ttl">Legal terms</p>
+      <a href="#" class="foot-text">Terms of Use</a>
+      <a href="#" class="foot-text">Disclosures & Disclaimers</a>
+    </div>
+    <div class="foot foot3">
+      <p class="foot-ttl">Privacy info</p>
+      <a href="#" class="foot-text">Privacy Policy</a>
+      <a href="#" class="foot-text">Cookie Policy</a>
+    </div>
+    <div class="foot foot4">
+      <p class="foot-ttl">About</p>
+      <a href="#" class="foot-text">About Us</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- лінкуємо скріпти -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+

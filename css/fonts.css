@@ -1,0 +1,49 @@
+.title__lg{
+    text-shadow: 2px 2px 5px green;
+    color: antiquewhite;
+    font-family: 'Asap';
+    font-size: 56px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.title__md{ 
+    z-index: 50;
+    text-shadow: 2px 2px 5px rgba(66, 139, 37, 0.733);
+    color: antiquewhite;
+    font-family: 'Asap';
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.title__sm{
+    color: antiquewhite;
+    font-family: 'Asap';
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: rgb(240, 224, 204);
+    text-shadow: 1px 1px 3px olive;
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.text__md{
+    color: rgb(240, 224, 204);
+    text-shadow: 1px 1px 3px olive;
+    font-family: 'Maven Pro';
+    line-height: 120%;
+    font-size: 16px;
+}
+
+.text__sm{
+    color: rgb(240, 224, 204);
+    font-family: 'Maven Pro';
+    font-size: 14px;
+    line-height: 120%;
+}
