@@ -1,14 +1,11 @@
-.barlow-semibold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
 .fraunces-bold {
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-variation-settings: 
+  "SOFT" 0, 
+  "WONK" 0;
 }
 
 .fraunces-black {
@@ -16,4 +13,73 @@
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+  font-variation-settings: 
+  "SOFT" 0, 
+  "WONK" 0;
 }
+
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* resets */
+body,
+h1,
+p,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.fbx {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-size: 18px;
+  color: #5b636d;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  padding-top: 34px;
+  padding-left: 44px;
+  padding-right: 44px;
+  div.fbx{
+    justify-content: space-between;
+  }
+  ul.fbx{
+    justify-content: center;
+    column-gap: 47px;
+    a {
+      line-height: 25px;
+      letter-spacing: -0.13px;
+      color: #fff;
+    }
+    &a:last-child{
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: -0.11px;
+      text-transform: uppercase;
+      color: #24303E;
+    }
+  }
+}
+
+
