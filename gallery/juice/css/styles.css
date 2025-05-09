@@ -217,6 +217,7 @@ main {
     flex-wrap: wrap;
     article {
       flex-direction: column-reverse;
+      min-width: 513px;
       height: 600px;
       flex-basis: 50%;
       flex-shrink: 1;
@@ -253,7 +254,7 @@ main {
     flex-direction: column;
     justify-content: center;
     min-height: 780px;
-    padding: 0 2.5%;
+    padding: 160px 2.5%;
     gap: 80px;
     h2 {
       font-size: 20px;
@@ -263,7 +264,10 @@ main {
       text-transform: uppercase;
     }
     div {
+      flex-wrap: wrap;
+      justify-content: center;
       column-gap: 30px;
+      row-gap: 64px;
       article {
         flex-basis: 350px;
         text-align: center;
