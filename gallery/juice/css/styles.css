@@ -55,6 +55,7 @@ html {
 /* def classes */
 .container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -144,7 +145,7 @@ main {
       min-height: 600px;
       flex-wrap: wrap;
       .info {
-        min-width: 510px;
+        min-width: 513px;
         height: 600px;
         padding: 11% 7.5% 11% 11.5%;
         flex-direction: column;
@@ -298,16 +299,15 @@ main {
 }
 
 footer {
+  min-height: 800px;
   background-color: #90d4c6;
   flex-direction: column;
-  height: 800px;
   section.projects {
-    height: 56.25%;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
     div {
-      height: 100%;
-      flex-basis: 25%;
-      flex-shrink: 1;
-      flex-grow: 1;
+      flex: 1 1 25%;
       img {
         width: 100%;
         height: 100%;
@@ -315,11 +315,11 @@ footer {
       }
     }
   }
+
   section.contacts {
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    height: 43.75%;
+    height: 350px;
+    padding-top: 72px;
     img {
       margin-bottom: 40px;
     }
@@ -346,10 +346,10 @@ footer {
         align-items: center;
         justify-content: center;
         height: 20px;
-        path{
+        path {
           transition: fill 0.2s ease-in-out;
         }
-        &:hover svg path{
+        &:hover svg path {
           fill: #fff;
         }
       }
@@ -357,3 +357,21 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  section.about article.yellow .bg {
+    order: -1;
+  }
+  footer section.projects div {
+    flex: 1 1 50%;
+  }
+}
+
+@media (max-width: 780px) {
+  nav {
+    display: none;
+  }
+  footer section.projects div {
+    flex: 1 1 100%;
+  }
+  
+}
