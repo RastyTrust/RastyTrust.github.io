@@ -139,11 +139,11 @@ main {
   }
   section.about {
     flex-direction: column;
-    align-items: start;
     article {
       height: 600px;
+      width: 100%;
       .info {
-        padding: 158px 110px 158px 165px;
+        padding: 11% 7.5% 11% 11.5%;
         flex-direction: column;
         flex-basis: 50%;
         flex-shrink: 1;
