@@ -140,9 +140,12 @@ main {
   section.about {
     flex-direction: column;
     article {
-      height: 600px;
       width: 100%;
+      min-height: 600px;
+      flex-wrap: wrap;
       .info {
+        min-width: 510px;
+        height: 600px;
         padding: 11% 7.5% 11% 11.5%;
         flex-direction: column;
         flex-basis: 50%;
@@ -175,6 +178,7 @@ main {
         background-position: center bottom;
       }
       .bg {
+        min-height: inherit;
         background-position: center;
         background-size: cover;
         flex-basis: 50%;
@@ -210,6 +214,7 @@ main {
     }
   }
   section.services {
+    flex-wrap: wrap;
     article {
       flex-direction: column-reverse;
       height: 600px;
@@ -248,7 +253,7 @@ main {
     flex-direction: column;
     justify-content: center;
     min-height: 780px;
-    padding: 0 165px;
+    padding: 0 2.5%;
     gap: 80px;
     h2 {
       font-size: 20px;
@@ -347,3 +352,4 @@ footer {
     }
   }
 }
+
