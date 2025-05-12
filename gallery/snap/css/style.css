@@ -1,0 +1,23 @@
+.epilogue-medium {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.epilogue-bold {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+    --almost-white: #fafafa;
+    --medium-gray: #696969;
+    --almost-black: #141414;
+}
+
+body{
+    font-size: 18px;
+}
