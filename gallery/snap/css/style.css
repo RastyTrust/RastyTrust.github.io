@@ -1,23 +1,83 @@
-.epilogue-medium {
-  font-family: "Epilogue", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
+@layer reset, base, layout, components, utilities;
 
-.epilogue-bold {
-  font-family: "Epilogue", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+@layer reset {
+  * {
+    box-sizing: border-box;
+  }
+  body,
+  h1,
+  p {
+    margin: 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
 }
-
-:root {
+@layer base {
+  :root {
     --almost-white: #fafafa;
     --medium-gray: #696969;
     --almost-black: #141414;
-}
+  }
+  .epilogue-medium {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
 
-body{
-    font-size: 18px;
+  .epilogue-bold {
+    font-weight: 700;
+  }
+  body {
+    color: var(--medium-gray);
+  }
+  .hero {
+
+  }
+  header {
+    max-width: 1380px;
+    padding-inline: 10px;
+    margin-inline: auto;
+  }
+  button {
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+  }
+}
+@layer layout {
+    .container {
+    max-width: 1165px;
+    padding-inline: 10px;
+    margin-inline: auto;
+  }
+  .flx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+@layer components {
+  .hero__bg {
+    max-width: 480px;
+    width: 100%;
+    height: 640px;
+    background-image: url(../images/image-hero-desktop.png);
+    background-size: contain;
+  }
+}
+@layer utilities {
 }
