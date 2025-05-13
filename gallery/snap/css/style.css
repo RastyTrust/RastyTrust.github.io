@@ -186,9 +186,12 @@
     }
     .hero {
       row-gap: 47px;
-      flex-direction: column;
+      flex-direction: column-reverse;
       .hero__info{
         align-self: center;
+        div:last-child{
+          justify-content: space-between;
+        }
       }
     }
   }
