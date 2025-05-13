@@ -1,4 +1,4 @@
-@layer reset, base, layout, components, utilities;
+@layer reset, base, layout, components, tablet, mobile;
 
 @layer reset {
   * {
@@ -179,5 +179,22 @@
   }
 }
 
-@layer utilities {
+@layer tablet {
+  @media (max-width: 1200px){
+    .container{
+      max-width: 768px;
+    }
+    .hero {
+      row-gap: 47px;
+      flex-direction: column;
+      .hero__info{
+        align-self: center;
+      }
+    }
+  }
+}
+@layer mobile {
+  @media (max-width: 768px){
+
+  }
 }
