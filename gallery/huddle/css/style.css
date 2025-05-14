@@ -428,6 +428,10 @@
         align-items: center;
         justify-content: center;
         border: 1px solid #fff;
+        transition: all 0.3s ease-in-out;
+        svg path{
+          transition: all 0.3s ease-in-out;
+        }
         &:hover {
           border-color: #ff52c1;
           svg path {
