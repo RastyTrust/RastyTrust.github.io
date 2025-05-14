@@ -198,6 +198,17 @@
     width: 100%;
     height: 420px;
     position: relative;
+    .contacts {
+      a:nth-of-type(1) {
+        background-image: url(../images/icon-location.svg);
+      }
+      a:nth-of-type(2) {
+        background-image: url(../images/icon-phone.svg);
+      }
+      a:nth-of-type(3) {
+        background-image: url(../images/icon-email.svg);
+      }
+    }
     .socials {
       div {
         a {
@@ -305,7 +316,7 @@
         width: 100%;
         justify-content: space-between;
         flex-direction: row;
-        .flx{
+        .flx {
           display: flex;
           justify-self: flex-start;
           row-gap: 12px;
@@ -314,13 +325,18 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          a {
+            display: inline-block;
+            padding-left: 1.5em;
+            background-position: center left;
+          }
         }
         .socials {
           height: auto;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          div{
+          div {
             column-gap: 12px;
           }
         }
@@ -413,6 +429,10 @@
       font-size: 14px;
       line-height: 24px;
       color: #ffffff;
+      a {
+        background-repeat: no-repeat;
+        background-size: 1em;
+      }
     }
     a {
       font-size: 14px;
@@ -429,7 +449,7 @@
         justify-content: center;
         border: 1px solid #fff;
         transition: all 0.3s ease-in-out;
-        svg path{
+        svg path {
           transition: all 0.3s ease-in-out;
         }
         &:hover {
