@@ -354,11 +354,12 @@
   }
 
   button {
-    color: #151515;
+    color: #FFF;
     background-color: #ff52bf;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
     &:hover {
       background-color: #ff9adb;
     }
@@ -376,7 +377,6 @@
       font-size: 14px;
       line-height: 19px;
       text-align: center;
-      color: #ffffff;
     }
     a {
       display: inline-block;
@@ -390,6 +390,10 @@
     }
   }
   main {
+    article {
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
+      border-radius: 16px;
+    }
     p {
       font-size: 18px;
       line-height: 27px;
@@ -409,6 +413,8 @@
       position: absolute;
       align-self: center;
       bottom: 322px;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+      border-radius: 15px;
     }
     h2 {
       font-size: 32px;
@@ -420,10 +426,8 @@
       width: 400px;
       height: 80px;
       border-radius: 40px;
-
       font-size: 20px;
       line-height: 30px;
-      color: #ffffff;
     }
     .contacts {
       font-size: 14px;
