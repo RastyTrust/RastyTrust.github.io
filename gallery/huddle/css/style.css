@@ -338,6 +338,7 @@
           justify-content: space-between;
           div {
             column-gap: 12px;
+            align-self: self-start;
           }
         }
       }
