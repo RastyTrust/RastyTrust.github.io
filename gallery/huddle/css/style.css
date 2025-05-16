@@ -234,7 +234,8 @@
       flex-direction: column;
       padding: 50px 85px;
       gap: 70px;
-      div:first-child {
+      & > div:first-child {
+        align-items: center;
         width: 100%;
         justify-content: space-between;
         margin: 0 5px;
@@ -249,7 +250,7 @@
         div {
           flex: 1 1 25%;
           max-width: 535px;
-          max-height: 320px;
+          max-height: 485px;
           flex-direction: column;
           align-items: first baseline;
           gap: 32px;
@@ -267,28 +268,28 @@
     margin-bottom: 345px;
     section {
       flex-direction: column;
-      max-width: 1232px;
+      max-width: 1200px;
       row-gap: 40px;
+      margin-inline: 15px;
       article {
-        flex-wrap: wrap;
+        padding-inline-start: 120px;
+        padding-inline-end: 30px;
         min-height: 440px;
-        align-items: normal;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         .info {
-          flex: 1 1 33%;
-          padding: 12% 2.4% 12% 10%;
+          width: 50%;
           flex-direction: column;
           align-items: normal;
           row-gap: 16px;
         }
         .bg {
-          flex: 1 1 33%;
-          min-width: 440px;
+          width: 440px;
           min-height: 440px;
-          margin-left: 110px;
-          margin-right: 16px;
-          background-position: center;
           background-size: contain;
           background-repeat: no-repeat;
+          background-clip: content-box;
         }
       }
     }
@@ -297,14 +298,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .container {
-      max-width: 1240px;
-      max-height: 210px;
-      align-items: normal;
-      row-gap: 32px;
+    .mid__box {
+      position: absolute;
+      top: -50%;
       align-self: center;
       flex-direction: column;
-      margin-top: 100px;
+      text-align: center;
+      align-items: center;
+    }
+    .container {
+      width: 100%;
+      align-self: center;
+      max-width: 1240px;
+      max-height: 210px;
+      margin-block-start: 100px;
+      padding-inline: 15px;
       img {
         align-self: flex-start;
         margin-bottom: 32px;
@@ -312,8 +320,6 @@
       .lower {
         display: flex;
         min-height: 150px;
-        column-gap: 150px;
-        row-gap: 16px;
         width: 100%;
         justify-content: space-between;
         flex-direction: row;
@@ -404,6 +410,11 @@
       box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
       border-radius: 16px;
     }
+    h2 {
+      font-size: 28px;
+      line-height: 42px;
+      color: var(--dark-cyan);
+    }
     p {
       font-size: 18px;
       line-height: 27px;
@@ -412,17 +423,11 @@
   }
   footer {
     .mid__box {
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
       row-gap: 32px;
       background-color: #fff;
       width: 800px;
       height: 280px;
       border-radius: 15px;
-      position: absolute;
-      align-self: center;
-      bottom: 322px;
       box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
       border-radius: 15px;
       h2 {
