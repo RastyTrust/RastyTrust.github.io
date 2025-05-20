@@ -737,8 +737,9 @@
                 h3 {
                     background-size: 35px 35px;
                     background-repeat: no-repeat;
+                    background-position: left center;
                     padding-inline-start: 40px;
-                    padding-block-end: 12px;
+                    padding-block: 6px;
                     line-height: 28px;
                     color: var(--almost-black);
                 }
