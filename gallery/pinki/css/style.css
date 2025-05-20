@@ -482,6 +482,7 @@
                     box-shadow: var(--shadow-thik);
 
                     .term {
+                        max-width: 353px;
                         text-align: center;
                         flex-grow: 1;
                     }
