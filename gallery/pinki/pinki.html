@@ -23,7 +23,7 @@
       <section class="container flx">
         <button class="log__in" id="logIn">Log in</button>
         <div class="hero flx">
-          <div class="flx">
+          <div class="left flx">
             <h1>It’s a hot place for your streaming fantasy.</h1>
             <p>
               It’s a free space for watching streams and chatting with alluring
@@ -36,7 +36,7 @@
                 Sign up with Google
               </button>
               <p>or</p>
-              <div class="email__wrap">
+              <div class="email__wrap flx">
                 <label for="email"
                   >Email
                   <input
@@ -111,7 +111,7 @@
                 </label>
               </div>
               <button type="button" id="switcher">Sign up</button>
-              <p>
+              <p class="term">
                 You hereby confirm that you are fully able and competent to
                 access Livebeam and comply with the Terms of Use & Service, and
                 are at least eighteen (18) years of age or the age of majority
@@ -121,44 +121,44 @@
             </div>
             <div class="back__page">
               <p>I am</p>
-              <div>
-                <input type="radio" id="sex" name="sex" value="male" required />
-                <label for="sex">Male</label>
-                <input type="radio" name="sex" value="female" required />
-                <label for="sex">Female</label>
+              <div class="radio__wrap">
+                <input type="radio" id="male" name="sex" value="sex" required hidden/>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" value="sex" required hidden/>
+                <label for="female">Female</label>
               </div>
 
-              <div>
+              <div class="name__wrap">
                 <label for="user__name"
                   >My Name
                   <input
                     type="text"
                     placeholder="e.g. Alex"
-                    id="userName"
+                    id="user__name"
                     name="user__name"
                     required
                   />
                 </label>
               </div>
 
-              <div>
+              <div class="bdate__wrap">
                 <label for="bdate">
                   I was born
                   <input
                     type="date"
                     name="bday"
-                    id="bDate"
+                    id="bdate"
                     name="bdate"
                     required
                   />
                 </label>
               </div>
 
-              <div>
+              <div class="checkbox__wrap">
                 <input type="checkbox" name="terms" id="termsOfUse" required />
-                <p>
-                  I have read understand and agree to Terms of Use, Privacy
-                  Policy, Disclosures&Disclaimers.
+                <p class="term">
+                  I have read understand and agree to <a href="#tou">Terms of Use</a>, <a href="#priv">Privacy
+                  Policy</a>, <a href="#dand">Disclosures&Disclaimers</a>.
                 </p>
               </div>
 
@@ -172,7 +172,7 @@
     </header>
 
     <main class="flx">
-      <div class="slick-vid">
+      <!-- <div class="slick-vid">
         <div><img src="./images/webp-v/1.webp" alt="" /></div>
         <div><img src="./images/webp-v/2.webp" alt="" /></div>
         <div><img src="./images/webp-v/3.webp" alt="" /></div>
@@ -181,7 +181,7 @@
         <div><img src="./images/webp-v/6.webp" alt="" /></div>
         <div><img src="./images/webp-v/7.webp" alt="" /></div>
         <div><img src="./images/webp-v/8.webp" alt="" /></div>
-      </div>
+      </div> -->
       <section class="about container flx">
         <h2>About</h2>
         <div>
@@ -191,6 +191,7 @@
             where you can enjoy your time and
             <span>find appropriate matches</span> at first.
           </p>
+          <br>
           <p>
             Approximately 80% of our users have already found their lovelies.
             <span>Watch streams</span> w ithout hindrance and meet someone
@@ -240,12 +241,12 @@
       <section class="can__find container flx">
         <h2>Here you can find</h2>
         <ul>
-          <li>Watching streams of everyone you really like;</li>
-          <li>Free communication with pretty streamers;</li>
-          <li>Sweet connection with people you match;</li>
-          <li>New acquaintances with someone who has similar interests;</li>
+          <li><p>Watching streams of everyone you really like;</p></li>
+          <li><p>Free communication with pretty streamers;</p></li>
+          <li><p>Sweet connection with people you match;</p></li>
+          <li><p>New acquaintances with someone who has similar interests;</p></li>
           <li>
-            Fascinating hobbies and exciting occupations from people you fancy.
+            <p>Fascinating hobbies and exciting occupations from people you fancy.</p>
           </li>
         </ul>
       </section>
@@ -256,7 +257,7 @@
           beautiful strangers!
         </p>
       </section>
-      <div class="slick-photo">
+      <!-- <div class="slick-photo">
         <div><img src="./images/webp-p/1.webp" alt="" /></div>
         <div><img src="./images/webp-p/2.webp" alt="" /></div>
         <div><img src="./images/webp-p/3.webp" alt="" /></div>
@@ -264,7 +265,7 @@
         <div><img src="./images/webp-p/5.webp" alt="" /></div>
         <div><img src="./images/webp-p/6.webp" alt="" /></div>
         <div><img src="./images/webp-p/7.webp" alt="" /></div>
-      </div>
+      </div> -->
       <a href="#signupForm">Join us for free</a>
       <section class="conclusion flx">
         <div>
@@ -276,38 +277,39 @@
           </p>
           <a href="#signupForm">Write to her</a>
         </div>
-        <img
-          src="./images/logo/hand.svg"
-          alt="telephone screen with pretty asian girl and new messedge free communication with streamers here"
-          width="750"
-          height="818"
-        />
+          <img
+            class="hand"
+            src="./images/logo/pic.svg"
+            alt="telephone screen with pretty asian girl and new messedge "
+            width="750"
+            height="818"
+          />
       </section>
     </main>
 
     <footer class="flx">
       <div class="wrap flx">
-        <div>
+        <div class="flx">
           <ul>
             <li><a href="mailto:|"> support@gmail.com </a></li>
             <li><a href="#">Unsubscribe</a></li>
           </ul>
         </div>
-        <div>
+        <div class="flx">
           <ul>
             <li><h3>Legal terms</h3></li>
             <li><a href="#">Terms of Use</a></li>
-            <li><a href="">Diclosures&Disclaimers</a></li>
+            <li><a href="#">Diclosures&Disclaimers</a></li>
           </ul>
         </div>
-        <div>
+       <div class="flx">
           <ul>
             <li><h3>Privacy info</h3></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="">Cookie Policy</a></li>
           </ul>
         </div>
-        <div>
+        <div class="flx">
           <ul>
             <li><h3>About</h3></li>
             <li><a href="#">About Us</a></li>

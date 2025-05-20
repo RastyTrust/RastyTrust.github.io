@@ -32,7 +32,7 @@ passwordInput.addEventListener("input", toggleSwitcherState);
 // світчер
 switcherBtn.addEventListener("click", () => {
   frontPage.style.display = "none";
-  backPage.style.display = "block";
+  backPage.style.display = "flex";
 });
 
 // неактивна кнопка
