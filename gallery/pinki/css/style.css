@@ -775,6 +775,7 @@
                     p {
                         max-width: 550px;
                         background-repeat: no-repeat;
+                        background-position: left center;
                         padding-inline-start: 50px;
                         padding-block: 5px;
                         color: var(--black);
