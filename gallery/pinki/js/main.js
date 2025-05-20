@@ -1,3 +1,5 @@
+AOS.init();
+
 const switcherBtn = document.getElementById("switcher");
 const frontPage = document.querySelector(".front__page");
 const backPage = document.querySelector(".back__page");

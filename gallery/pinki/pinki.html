@@ -6,6 +6,7 @@
     <title>Pinki</title>
     <link rel="stylesheet" href="css/style.css" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -23,14 +24,19 @@
       <section class="container flx">
         <button class="log__in" id="logIn">Log in</button>
         <div class="hero flx">
-          <div class="left flx">
+          <div data-aos="fade-up-right" class="left flx">
             <h1>It’s a hot place for your streaming fantasy.</h1>
             <p>
               It’s a free space for watching streams and chatting with alluring
               people.
             </p>
           </div>
-          <form class="flx" method="post" id="signupForm">
+          <form
+            data-aos="fade-up-left"
+            class="flx"
+            method="post"
+            id="signupForm"
+          >
             <div class="front__page flx">
               <button type="button" id="googleSignup">
                 Sign up with Google
@@ -122,9 +128,23 @@
             <div class="back__page">
               <p>I am</p>
               <div class="radio__wrap">
-                <input type="radio" id="male" name="sex" value="sex" required hidden/>
+                <input
+                  type="radio"
+                  id="male"
+                  name="sex"
+                  value="sex"
+                  required
+                  hidden
+                />
                 <label for="male">Male</label>
-                <input type="radio" id="female" name="sex" value="sex" required hidden/>
+                <input
+                  type="radio"
+                  id="female"
+                  name="sex"
+                  value="sex"
+                  required
+                  hidden
+                />
                 <label for="female">Female</label>
               </div>
 
@@ -157,8 +177,10 @@
               <div class="checkbox__wrap">
                 <input type="checkbox" name="terms" id="termsOfUse" required />
                 <p class="term">
-                  I have read understand and agree to <a href="#tou">Terms of Use</a>, <a href="#priv">Privacy
-                  Policy</a>, <a href="#dand">Disclosures&Disclaimers</a>.
+                  I have read understand and agree to
+                  <a href="#tou">Terms of Use</a>,
+                  <a href="#priv">Privacy Policy</a>,
+                  <a href="#dand">Disclosures&Disclaimers</a>.
                 </p>
               </div>
 
@@ -172,7 +194,7 @@
     </header>
 
     <main class="flx">
-      <div class="slick-vid">
+      <div data-aos="fade-up-right" class="slick-vid">
         <div><img src="./images/webp-v/1.webp" alt="" /></div>
         <div><img src="./images/webp-v/2.webp" alt="" /></div>
         <div><img src="./images/webp-v/3.webp" alt="" /></div>
@@ -182,7 +204,7 @@
         <div><img src="./images/webp-v/7.webp" alt="" /></div>
         <div><img src="./images/webp-v/8.webp" alt="" /></div>
       </div>
-      <section class="about container flx">
+      <section data-aos="fade-up-left" class="about container flx">
         <h2>About</h2>
         <div>
           <p>
@@ -191,7 +213,7 @@
             where you can enjoy your time and
             <span>find appropriate matches</span> at first.
           </p>
-          <br>
+          <br />
           <p>
             Approximately 80% of our users have already found their lovelies.
             <span>Watch streams</span> w ithout hindrance and meet someone
@@ -200,7 +222,7 @@
           <a href="#signupForm">Join for free</a>
         </div>
       </section>
-      <section class="why__join container flx">
+      <section data-aos="fade-up-right" class="why__join container flx">
         <h2>Why join us?</h2>
         <div class="grid">
           <article>
@@ -238,26 +260,31 @@
           </article>
         </div>
       </section>
-      <section class="can__find container flx">
+      <section data-aos="fade-up-left" class="can__find container flx">
         <h2>Here you can find</h2>
         <ul>
           <li><p>Watching streams of everyone you really like;</p></li>
           <li><p>Free communication with pretty streamers;</p></li>
           <li><p>Sweet connection with people you match;</p></li>
-          <li><p>New acquaintances with someone who has similar interests;</p></li>
           <li>
-            <p>Fascinating hobbies and exciting occupations from people you fancy.</p>
+            <p>New acquaintances with someone who has similar interests;</p>
+          </li>
+          <li>
+            <p>
+              Fascinating hobbies and exciting occupations from people you
+              fancy.
+            </p>
           </li>
         </ul>
       </section>
-      <section class="universe flx">
+      <section data-aos="fade-up-right" class="universe flx">
         <h2>It’s a universe of communication and streaming without borders!</h2>
         <p>
           Let yourself to be free – share your thoughts, delight, and fears with
           beautiful strangers!
         </p>
       </section>
-      <div class="slick-photo">
+      <div data-aos="fade-up-left" class="slick-photo">
         <div><img src="./images/webp-p/1.webp" alt="" /></div>
         <div><img src="./images/webp-p/2.webp" alt="" /></div>
         <div><img src="./images/webp-p/3.webp" alt="" /></div>
@@ -267,7 +294,7 @@
         <div><img src="./images/webp-p/7.webp" alt="" /></div>
       </div>
       <a href="#signupForm">Join us for free</a>
-      <section class="conclusion flx">
+      <section data-aos="fade-up-bottom" class="conclusion flx">
         <div>
           <h2>It’s a dedicated space for your bold fantasies!</h2>
           <p>
@@ -277,18 +304,18 @@
           </p>
           <a href="#signupForm">Write to her</a>
         </div>
-          <img
-            class="hand"
-            src="./images/logo/pic.svg"
-            alt="telephone screen with pretty asian girl and new messedge "
-            width="750"
-            height="818"
-          />
+        <img
+          class="hand"
+          src="./images/logo/pic.svg"
+          alt="telephone screen with pretty asian girl and new messedge "
+          width="750"
+          height="818"
+        />
       </section>
     </main>
 
     <footer class="flx">
-      <div class="wrap flx">
+      <div data-aos="fade-up-top" class="wrap flx">
         <div class="flx">
           <ul>
             <li><a href="mailto:|"> support@gmail.com </a></li>
@@ -302,7 +329,7 @@
             <li><a href="#">Diclosures&Disclaimers</a></li>
           </ul>
         </div>
-       <div class="flx">
+        <div class="flx">
           <ul>
             <li><h3>Privacy info</h3></li>
             <li><a href="#">Privacy Policy</a></li>
@@ -319,6 +346,7 @@
     </footer>
 
     <!-- лінкуємо скрипти -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/main.js"></script>
