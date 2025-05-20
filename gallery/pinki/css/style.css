@@ -46,7 +46,7 @@
         margin: 0;
         border: none;
         background: none;
-        outline:none;
+        outline: none;
     }
 
 
@@ -408,10 +408,16 @@
 
 /* ---------- @components ---------- */
 @layer components {
-     button:focus, a:focus, input:focus {
-        outline: 2px dashed var(--outline);
+
+    button,
+    a,
+    input,
+    label {
+        &:focus {
+            outline: 2px dashed var(--outline);
+        }
     }
-    
+
     .slick-slide img {
         width: 100%;
         height: 350px;
@@ -502,6 +508,7 @@
                         font-size: 18px;
                         line-height: 21px;
                         text-align: center;
+
                         &:hover {
                             transform: scale(1.1);
                         }
