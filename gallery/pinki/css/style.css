@@ -144,7 +144,7 @@
     }
 
     @font-face {
-        font-family: 'CeraPro-Regular', sans-serif;
+        font-family: 'CeraPro', sans-serif;
         font-weight: 400;
         font-style: normal;
         src:
@@ -156,7 +156,7 @@
     /* налаштування змінних шрифтів */
     :root {
         --font-body: 'Trebuchet MS', sans-serif;
-        --font-terms: 'CeraPro-Regular', sans-serif;
+        --font-terms: 'CeraPro', sans-serif;
         --weight-r: 400;
         --weight-b: 700;
 
@@ -222,11 +222,12 @@
         font-size: var(--font-size-main);
     }
 
-    form p.term {
+    form .term {
         font-family: var(--font-terms);
         font-size: var(--font-size-us);
         color: var(--clear-sky);
         text-shadow: var(--terms-shadow);
+        font-weight: var(--weight-r);
     }
 
 
