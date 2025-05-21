@@ -185,10 +185,10 @@
     @media (max-width: 768px) {
         :root {
             --font-size-xl: 26px;
+            --font-size-l: 24px;
+            --font-size-m: 20px;
+            --font-size-n: 18px;
             --font-size-main: 16px;
-            --font-size-m: 24px;
-            --font-size-n: 20px;
-            --font-size-s: 18px;
             --font-size-sm: 14px;
             --font-size-xs: 12px;
             --font-size-us: 10px;
@@ -497,7 +497,8 @@
                     }
 
                     button {
-                        width: 356px;
+                        width: 100%;
+                        max-width: 356px;
                         height: 60px;
                         color: var(--white);
                         background: var(--button-gradient);
@@ -767,12 +768,12 @@
                     justify-content: center;
                     align-items: center;
 
-                    width: 800px;
+                    max-width: 800px;
                     height: 120px;
                     background-color: var(--white);
                     box-shadow: var(--shadow);
                     border-radius: 30px;
-
+                    padding-inline: 30px;
                     p {
                         max-width: 550px;
                         background-repeat: no-repeat;
