@@ -18,7 +18,6 @@ toggleBtn.addEventListener("click", () => {
   eyeClosed.style.display = isHidden ? "block" : "none";
 });
 
-
 // відключаємо кнопку до заповнення полів
 function toggleSwitcherState() {
   const isEmailValid = emailInput.value.trim() !== "";
@@ -40,80 +39,102 @@ switcherBtn.addEventListener("click", () => {
 // неактивна кнопка
 switcherBtn.disabled = true;
 
- $('.slick-photo').slick({
-        adaptiveHeight: true,
-        arrows: false,
-        dots: false,
-        slidesToShow: 5,
+$(".slick-photo").slick({
+  adaptiveHeight: true,
+  arrows: false,
+  dots: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: true,
+  variableWidth: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  infinite: true,
+  pauseOnHover: true,
+  swipeToSlide: true,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 1480,
+      settings: {
+        centerMode: true,
+        slidesToShow: 2,
         slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 780,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 570,
+      settings: {
         centerMode: false,
-        variableWidth: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-        pauseOnHover: true,
-        swipeToSlide: true,
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 1480,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 780,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    });
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        centerMode: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 
-    $('.slick-vid').slick({
-        adaptiveHeight: true,
-        arrows: false,
-        dots: false,
-        slidesToShow: 5,
+$(".slick-vid").slick({
+  adaptiveHeight: true,
+  arrows: false,
+  dots: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: true,
+  variableWidth: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  infinite: true,
+  pauseOnHover: true,
+  swipeToSlide: true,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 1480,
+      settings: {
+        centerMode: true,
+        slidesToShow: 2,
         slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 780,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 570,
+      settings: {
         centerMode: false,
-        variableWidth: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-        pauseOnHover: true,
-        swipeToSlide: true,
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 1480,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 780,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    });
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        centerMode: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
