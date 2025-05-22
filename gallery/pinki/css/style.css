@@ -895,21 +895,6 @@
     @media (max-width: 1024px) {}
 
     @media (max-width: 768px) {
-        main {
-            a {
-                max-width: 280px;
-                min-height: 60px;
-            }
-
-            .about {
-                a {
-                    max-width: 260px;
-                }
-            }
-        }
-    }
-
-    @media (max-width: 320px) {
         header {
             .hero {
                 flex-direction: column;
@@ -920,6 +905,7 @@
                 flex-direction: column;
                 overflow: hidden;
                 contain: layout paint;
+
                 .wrap {
                     order: -1;
                     width: 280px;
@@ -942,10 +928,19 @@
 
 
         main {
+            a {
+                max-width: 280px;
+                min-height: 60px;
+            }
+
             .about {
                 padding: 40px 11px;
                 width: 100%;
                 border-radius: 20px;
+
+                a {
+                    max-width: 260px;
+                }
             }
 
             .why__join {
@@ -1027,3 +1022,5 @@
         }
     }
 }
+
+@media (max-width: 320px) {}
