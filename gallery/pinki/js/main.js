@@ -49,13 +49,14 @@ switcherBtn.addEventListener("click", () => {
 // неактивна кнопка
 switcherBtn.disabled = true;
 
-$(".slick-photo").slick({
+$('.slick-photo').slick({
+  centerPadding: '15%',
   adaptiveHeight: true,
   arrows: false,
   dots: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  centerMode: false,
+  centerMode: true,
   variableWidth: false,
   autoplay: true,
   autoplaySpeed: 3000,
@@ -64,30 +65,36 @@ $(".slick-photo").slick({
   swipeToSlide: true,
   focusOnSelect: true,
   responsive: [
-    {
+     {
       breakpoint: 1480,
       settings: {
+        centerPadding: '5%',
         slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: { 
+        centerPadding: '20%',
+        centerMode: true,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 780,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 570,
-      settings: {
+        centerPadding: '13%',
+        centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 380,
+      breakpoint: 580,
       settings: {
+        centerMode: false,
         slidesToShow: 1,
         slidesToScroll: 1,
       },
@@ -96,12 +103,13 @@ $(".slick-photo").slick({
 });
 
 $(".slick-vid").slick({
+  centerPadding: '10%',
   adaptiveHeight: true,
   arrows: false,
   dots: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  centerMode: false,
+  centerMode: true,
   variableWidth: false,
   autoplay: true,
   autoplaySpeed: 3000,
@@ -110,30 +118,36 @@ $(".slick-vid").slick({
   swipeToSlide: true,
   focusOnSelect: true,
   responsive: [
-    {
+     {
       breakpoint: 1480,
       settings: {
+        centerPadding: '5%',
         slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: { 
+        centerPadding: '20%',
+        centerMode: true,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 780,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 570,
-      settings: {
+        centerPadding: '13%',
+        centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 380,
+      breakpoint: 580,
       settings: {
+        centerMode: false,
         slidesToShow: 1,
         slidesToScroll: 1,
       },
