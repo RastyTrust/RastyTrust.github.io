@@ -633,6 +633,7 @@
 
                     .front__page {
                         padding: 3.6125rem 4rem;
+
                         p {
                             align-self: center;
                             margin-block-end: 1rem;
@@ -651,17 +652,19 @@
                     .back__page {
                         position: relative;
                         padding: 5.875rem 4rem 1.875rem;
-                        &::before{
-                                    content: "";
-                                    width: 168px;
-                                    height: 28px;
-                                    background-image: url(../images/logo_bar.svg);
-                                    position: absolute;
-                                    display: block;
-                                    top: 5%;
-                                    left: 50%;
-                                    transform: translate(-50%);
-                                }
+
+                        &::before {
+                            content: "";
+                            width: 168px;
+                            height: 28px;
+                            background-image: url(../images/logo_bar.svg);
+                            position: absolute;
+                            display: block;
+                            top: 5%;
+                            left: 50%;
+                            transform: translate(-50%);
+                        }
+
                         p {
                             align-self: normal;
                             margin-block-end: 1rem;
@@ -1068,19 +1071,23 @@
 
         body {
             font-size: var(--font-16);
-            h1{
+
+            h1 {
                 font-size: var(--font-24);
             }
-            h2{
+
+            h2 {
                 font-size: var(--font-26);
             }
+
             h3 {
                 font-size: var(--font-18);
             }
+
             p {
                 font-size: var(--font-16);
             }
-            
+
 
             header {
                 overflow-x: hidden;
@@ -1095,14 +1102,18 @@
 
                     .hero {
                         row-gap: 2rem;
+
                         .conclusion {
                             margin-block-start: 0;
                             display: flex;
+
                             .content {
-                                h2{
+                                h2 {
                                     margin-block-end: 2rem;
                                 }
+
                                 position: relative;
+
                                 a {
                                     position: absolute;
                                     display: inline-block;
@@ -1157,6 +1168,7 @@
 
                         form {
                             min-height: 415px;
+
                             label {
                                 font-size: var(--font-12);
 
@@ -1179,15 +1191,18 @@
                                 border-radius: 5.8px;
                                 font-size: var(--font-12);
                             }
-                            .term{
+
+                            .term {
                                 font-size: var(--font-10);
                                 line-height: var();
                             }
+
                             .front__page {
                                 position: relative;
                                 min-height: 420px;
-                                padding: 3.75rem 2.25rem 1rem ;
-                                &::before{
+                                padding: 3.75rem 2.25rem 1rem;
+
+                                &::before {
                                     content: "";
                                     width: 98px;
                                     height: 16px;
@@ -1199,6 +1214,7 @@
                                     left: 50%;
                                     transform: translate(-50%);
                                 }
+
                                 div {
                                     margin-block-end: 1rem;
                                 }
@@ -1215,6 +1231,10 @@
                                     line-height: var(--font-12);
                                 }
 
+                                .toggle-visibility {
+                                    top: 50%;
+                                }
+
                                 .switch__btn {
                                     background-size:
                                         16px 12px,
@@ -1228,16 +1248,20 @@
                             .back__page {
                                 padding: 1.875rem 2.25rem;
                                 min-height: 420px;
-                                &::before{
+
+                                &::before {
                                     display: none;
                                 }
+
                                 div {
                                     margin-block-end: 1.375rem;
                                 }
-                                p:first-of-type{
+
+                                p:first-of-type {
                                     font-size: var(--font-12);
                                     margin-block-end: 0.5rem;
                                 }
+
                                 .radio__wrap {
                                     label {
                                         font-size: var(--font-12);
@@ -1275,6 +1299,7 @@
                 a {
                     font-size: var(--font-20);
                 }
+
                 .slick-photo {
                     margin-block-end: 3.75rem;
                 }
@@ -1391,9 +1416,12 @@
                 .universe {
                     position: relative;
                     text-align: left;
-                    h2,p{
+
+                    h2,
+                    p {
                         color: var(--almost-black);
                     }
+
                     &>::after {
                         display: block;
                         content: "";
@@ -1424,9 +1452,9 @@
                     display: none;
                 }
             }
-            
-            footer{
-                a{
+
+            footer {
+                a {
                     font-size: var(--font-16);
                 }
             }
