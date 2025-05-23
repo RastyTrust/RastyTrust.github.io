@@ -8,6 +8,16 @@ const passwordInput = document.getElementById("password");
 const toggleBtn = document.getElementById("togglePassword");
 const eyeOpen = document.getElementById("eyeOpen");
 const eyeClosed = document.getElementById("eyeClosed");
+const grid = document.querySelector('.why__join .grid');
+const items = grid.querySelectorAll('article');
+let index = 0;
+
+//грід авто скролл 10 секунд
+setInterval(() => {
+  index = (index + 1) % items.length;
+  const scrollX = items[index].offsetLeft;
+  grid.scrollTo({ left: scrollX, behavior: 'smooth' });
+}, 10000);
 
 // тогл на око
 toggleBtn.addEventListener("click", () => {
