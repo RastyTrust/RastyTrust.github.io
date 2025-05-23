@@ -558,7 +558,7 @@
 
                         .google__btn {
 
-                            background:
+                            background-image:
                                 url(../images/logo/glogo.svg),
                                 var(--button-gradient);
                             background-repeat: no-repeat;
@@ -570,7 +570,7 @@
 
                         .switch__btn {
 
-                            background:
+                            background-image:
                                 url(../images/logo/letter.svg),
                                 url(../images/logo/rect.svg),
                                 var(--button-gradient);
