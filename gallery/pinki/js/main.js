@@ -8,15 +8,15 @@ const passwordInput = document.getElementById("password");
 const toggleBtn = document.getElementById("togglePassword");
 const eyeOpen = document.getElementById("eyeOpen");
 const eyeClosed = document.getElementById("eyeClosed");
-const grid = document.querySelector('.why__join .grid');
-const items = grid.querySelectorAll('article');
+const grid = document.querySelector(".why__join .grid");
+const items = grid.querySelectorAll("article");
 let index = 0;
 
 //грід авто скролл 10 секунд
 setInterval(() => {
   index = (index + 1) % items.length;
   const scrollX = items[index].offsetLeft;
-  grid.scrollTo({ left: scrollX, behavior: 'smooth' });
+  grid.scrollTo({ left: scrollX, behavior: "smooth" });
 }, 10000);
 
 // тогл на око
@@ -30,10 +30,12 @@ toggleBtn.addEventListener("click", () => {
 
 // відключаємо кнопку до заповнення полів
 function toggleSwitcherState() {
-  const isEmailValid = emailInput.value.trim() !== "";
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isEmailValid = emailRegex.test(emailInput.value.trim());
   const isPasswordValid = passwordInput.value.trim().length >= 8;
 
   switcherBtn.disabled = !(isEmailValid && isPasswordValid);
+  
 }
 
 // лісенери
@@ -49,8 +51,29 @@ switcherBtn.addEventListener("click", () => {
 // неактивна кнопка
 switcherBtn.disabled = true;
 
-$('.slick-photo').slick({
-  centerPadding: '15%',
+// флетпік календар
+
+flatpickr("#bdate", {
+  dateFormat: "m/d/Y", // MM/DD/YYYY
+  maxDate: new Date(), // Не дозволяємо вибирати майбутні дати
+  onChange: function (selectedDates, dateStr, instance) {
+    const birthDate = selectedDates[0];
+    const today = new Date();
+
+    const ageDifMs = today - birthDate;
+    const ageDate = new Date(ageDifMs);
+    const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+    if (age < 18) {
+      alert("You must be at least 18 years old.");
+      instance.clear(); // очищає поле
+    }
+  },
+});
+
+// слік слайд конфіги
+$(".slick-photo").slick({
+  centerPadding: "15%",
   adaptiveHeight: true,
   arrows: false,
   dots: false,
@@ -65,18 +88,18 @@ $('.slick-photo').slick({
   swipeToSlide: true,
   focusOnSelect: true,
   responsive: [
-     {
+    {
       breakpoint: 1480,
       settings: {
-        centerPadding: '5%',
+        centerPadding: "5%",
         slidesToShow: 3,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 1024,
-      settings: { 
-        centerPadding: '20%',
+      settings: {
+        centerPadding: "20%",
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -85,7 +108,7 @@ $('.slick-photo').slick({
     {
       breakpoint: 780,
       settings: {
-        centerPadding: '13%',
+        centerPadding: "13%",
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -103,7 +126,7 @@ $('.slick-photo').slick({
 });
 
 $(".slick-vid").slick({
-  centerPadding: '10%',
+  centerPadding: "10%",
   adaptiveHeight: true,
   arrows: false,
   dots: false,
@@ -118,18 +141,18 @@ $(".slick-vid").slick({
   swipeToSlide: true,
   focusOnSelect: true,
   responsive: [
-     {
+    {
       breakpoint: 1480,
       settings: {
-        centerPadding: '5%',
+        centerPadding: "5%",
         slidesToShow: 3,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 1024,
-      settings: { 
-        centerPadding: '20%',
+      settings: {
+        centerPadding: "20%",
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -138,7 +161,7 @@ $(".slick-vid").slick({
     {
       breakpoint: 780,
       settings: {
-        centerPadding: '13%',
+        centerPadding: "13%",
         centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1,

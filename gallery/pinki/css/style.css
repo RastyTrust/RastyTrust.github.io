@@ -673,6 +673,7 @@
                             margin-block-end: 1rem;
                         }
 
+
                         .radio__wrap {
                             flex-direction: row;
                             display: flex;
@@ -1297,7 +1298,8 @@
                                 .checkbox__wrap {
                                     align-items: center;
                                     column-gap: 0.5rem;
-                                    input { 
+
+                                    input {
                                         min-width: 1.125rem;
                                         min-height: 1.125rem;
                                     }
