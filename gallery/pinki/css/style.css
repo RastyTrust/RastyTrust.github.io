@@ -1139,8 +1139,8 @@
                                     transform: translate(-50%, -200%);
                                     transition: all 0.5s ease-in-out;
 
-                                    &:hover{
-                                        transform: translate(-50%, -200%) scale(1.05) ;
+                                    &:hover {
+                                        transform: translate(-50%, -200%) scale(1.05);
                                     }
                                 }
                             }
@@ -1206,7 +1206,7 @@
 
                             .term {
                                 font-size: var(--font-10);
-                                line-height: var();
+                                line-height: var(--font-12);
                             }
 
                             .front__page {
@@ -1245,6 +1245,11 @@
 
                                 .toggle-visibility {
                                     top: 50%;
+                                }
+
+                                .term {
+                                    color: var(--clear-sky);
+                                    text-shadow: none;
                                 }
 
                                 .switch__btn {
@@ -1291,6 +1296,17 @@
 
                                 .checkbox__wrap {
                                     align-items: center;
+                                    column-gap: 0.5rem;
+                                    input { 
+                                        min-width: 1.125rem;
+                                        min-height: 1.125rem;
+                                    }
+
+                                    .term {
+                                        color: var(--placeholder-gray);
+                                        text-shadow: none;
+                                        text-align: left;
+                                    }
 
                                     p {
                                         margin-block-end: 0;
