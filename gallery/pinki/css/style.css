@@ -404,6 +404,7 @@
                 min-height: 368px;
 
             }
+
             .wrap::after {
                 display: block;
                 content: "";
@@ -641,6 +642,7 @@
                         }
 
                     }
+
                     .front__page::after {
                         content: "";
                         width: 70px;
@@ -719,6 +721,7 @@
                         }
 
                     }
+
                     .back__page::after {
                         content: "";
                         display: block;
@@ -1134,6 +1137,10 @@
                                     top: 0;
                                     left: 50%;
                                     transform: translate(-50%, -200%);
+
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
                                 }
                             }
 
@@ -1359,13 +1366,14 @@
                     align-self: center;
                     margin-block-end: 4rem;
 
-                    
+
                     img {
                         border-radius: 30px;
                         display: block;
                         object-fit: cover;
                     }
                 }
+
                 .solo::after {
                     content: "";
                     position: absolute;
@@ -1382,7 +1390,7 @@
                     transform: translate(-50%, 20%);
 
                 }
-                
+
                 .can__find {
                     margin-block-end: 3.675rem;
 
@@ -1427,6 +1435,7 @@
                     }
 
                 }
+
                 .universe::after {
                     display: block;
                     content: "";
