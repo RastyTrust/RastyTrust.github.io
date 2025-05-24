@@ -1131,16 +1131,12 @@
                                     border-radius: 0.625rem;
                                     color: var(--white);
                                     transition: all 0.5s ease-in-out;
-                                    font-size: var(--font-24);
-                                    line-height: var(--font-28);
+                                    font-size: var(--font-20);
+                                    line-height: var(--font-22);
                                     font-weight: var(--weight-b);
                                     top: 0;
                                     left: 50%;
                                     transform: translate(-50%, -200%);
-
-                                    &:hover {
-                                        transform: scale(1.05);
-                                    }
                                 }
                             }
 
