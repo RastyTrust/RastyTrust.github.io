@@ -54,6 +54,7 @@ switcherBtn.disabled = true;
 // флетпік календар
 
 flatpickr("#bdate", {
+  allowInput: "true",
   dateFormat: "m/d/Y", // MM/DD/YYYY
   maxDate: new Date(), // Не дозволяємо вибирати майбутні дати
   onChange: function (selectedDates, dateStr, instance) {
