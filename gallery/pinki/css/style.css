@@ -1326,11 +1326,16 @@
             }
 
             main {
+                .slick-slide img {
+                    height: 305px;
+                }
+
+
                 a {
                     font-size: var(--font-20);
                 }
 
-                .slick-photo {
+                .slick-vid {
                     margin-block-end: 3.75rem;
                 }
 
@@ -1338,6 +1343,7 @@
                     max-height: 480px;
                     padding-inline: 1rem;
                     padding-block: 2.5rem;
+                    margin-block-end: 3.5rem;
 
                     h2 {
                         margin-block-end: 0.875rem;
@@ -1493,5 +1499,4 @@
         }
     }
 
-    @media (max-width: 320px) {}
 }
