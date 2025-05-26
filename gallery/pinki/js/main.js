@@ -12,12 +12,12 @@ const grid = document.querySelector(".why__join .grid");
 const items = grid.querySelectorAll("article");
 let index = 0;
 
-//грід авто скролл 10 секунд
+//грід в слайд - авто скролл 6 секунд ( бо не встигнеш прочитати)
 setInterval(() => {
   index = (index + 1) % items.length;
   const scrollX = items[index].offsetLeft;
   grid.scrollTo({ left: scrollX, behavior: "smooth" });
-}, 10000);
+}, 6000);
 
 // тогл на око
 toggleBtn.addEventListener("click", () => {
@@ -55,8 +55,8 @@ switcherBtn.disabled = true;
 
 flatpickr("#bdate", {
   allowInput: "true",
-  dateFormat: "m/d/Y", // MM/DD/YYYY
-  maxDate: new Date(), // Не дозволяємо вибирати майбутні дати
+  dateFormat: "m/d/Y", 
+  maxDate: new Date(), 
   onChange: function (selectedDates, dateStr, instance) {
     const birthDate = selectedDates[0];
     const today = new Date();
@@ -67,7 +67,7 @@ flatpickr("#bdate", {
 
     if (age < 18) {
       alert("You must be at least 18 years old.");
-      instance.clear(); // очищає поле
+      instance.clear(); 
     }
   },
 });
