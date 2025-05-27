@@ -1034,8 +1034,10 @@
         main {
             .conclusion {
                 flex-direction: column;
+                
 
                 div:first-child {
+                    align-self: center;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
