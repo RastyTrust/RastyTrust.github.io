@@ -1032,9 +1032,16 @@
         }
 
         main {
+
+            &>a {
+                align-self: center;
+                display: inline-block;
+                margin-block-end: 8rem;
+            }
+
             .conclusion {
                 flex-direction: column;
-                
+
 
                 div:first-child {
                     align-self: center;
@@ -1051,6 +1058,8 @@
                     }
                 }
             }
+
+
         }
     }
 
